@@ -1,0 +1,25 @@
+{
+    "name": "mqtt-test",
+    "version-string": "0.0.1",
+    "maintainers": [
+        "Particle_G <particle_g@outlook.com>"
+    ],
+    "description": "A DLL proxy for cmw-coder",
+    "homepage": "https://github.com/ParticleG/cmw-coder-proxy",
+    "documentation": "https://github.com/ParticleG/cmw-coder-proxy/blob/main/README.md",
+    "license": "MIT",
+    "dependencies": [
+        "cryptopp",
+        {
+            "name": "drogon",
+            "default-features": false,
+            "features": [
+                "orm",
+                "postgres",
+                "redis",
+                "yaml"
+            ]
+        },
+        "magic-enum"
+    ]
+}
