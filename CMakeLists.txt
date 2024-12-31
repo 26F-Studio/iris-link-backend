@@ -6,7 +6,7 @@ set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems
         CACHE STRING "Vcpkg toolchain file"
 )
 
-project(mqtt-test CXX)
+project(iris-link-backend CXX)
 
 add_executable(${PROJECT_NAME} main.cc)
 

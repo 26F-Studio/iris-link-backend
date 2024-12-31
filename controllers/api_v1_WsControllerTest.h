@@ -5,7 +5,7 @@
 using namespace drogon;
 
 namespace api::v1 {
-    class WsControllerTest : public WebSocketController<WsControllerTest> {
+    class WsControllerTest final : public WebSocketController<WsControllerTest> {
     public:
         void handleNewMessage(
             const WebSocketConnectionPtr&,
