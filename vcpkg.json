@@ -20,6 +20,7 @@
                 "yaml"
             ]
         },
-        "magic-enum"
+        "magic-enum",
+        "paho-mqttpp3"
     ]
 }

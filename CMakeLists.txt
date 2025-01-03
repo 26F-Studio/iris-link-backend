@@ -13,11 +13,13 @@ add_executable(${PROJECT_NAME} main.cc)
 find_package(cryptopp CONFIG REQUIRED)
 find_package(Drogon CONFIG REQUIRED)
 find_package(magic_enum CONFIG REQUIRED)
+find_package(PahoMqttCpp CONFIG REQUIRED)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
         cryptopp::cryptopp
         Drogon::Drogon
-        magic_enum::magic_enum)
+        magic_enum::magic_enum
+        PahoMqttCpp::paho-mqttpp3)
 
 target_include_directories(${PROJECT_NAME} PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}
